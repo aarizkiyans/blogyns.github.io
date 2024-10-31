@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Page Blog</title>
+  <style>
+    p {
+      text-align: justify;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Convolusional Neural Network</h1>
+  </header>
+  
+  <section class="content">
+    <article>
+      <h2>Pengertian Neural Network</h2>
+      <p>Convolution Neural network (CNN) adalah model pembelajaran mendalam yang dirancang untuk deteksi gambar dan objek deteksi. Jaringan Neural Konvolusi sangat baik dengan data gambar yang membantu dalam mengekstraksi informasi dari gambar.  
+        Ketika kita manusia melihat sebuah gambar atau wajah, kita dapat mengidentifikasinya segera. Ini adalah salah satu keterampilan dasar yang kita miliki. Identifikasi ini proses ini merupakan penggabungan dari sejumlah besar proses kecil dan koordinasi antara berbagai komponen penting dari sistem visual kita. Jaringan Syaraf Tiruan atau CNN mampu mereplikasi hal ini kemampuan yang luar biasa ini dengan menggunakan Deep Learning. Pertimbangkan ini. Kita harus membuat solusi untuk membedakan antara seekor kucing dan seekor anjing. Atribut yang membuat mereka berbeda bisa berupa telinga, kumis, hidung, dan sebagainya. CNN sangat membantu untuk mengekstraksi atribut-atribut gambar yang penting untuk gambar tersebut. Atau dengan kata lain, CNN akan mengekstrak fitur-fitur yang membedakan antara kucing dan anjing. CNN sangat kuat dalam klasifikasi gambar, deteksi objek, objek pelacakan objek, keterangan gambar, pengenalan wajah, dan sebagainya. 
+        Dalam CNN terdapat beberapa filter yang digunakan. Filter-filter ini disusun menjadi beberapa lapisan. Lapisan pertama didesain untuk mendeteksi objek sederhana seperti garis. Karena ada banyak kemungkinan konfigurasi (kemiringan) untuk garis, lapisan pertama mungkin memiliki beberapa filter untuk mendeteksi garis pada semua orientasi ini. Lapisan kedua dirancang untuk mendeteksi kurva. Karena ada lebih banyak konfigurasi untuk kurva dibandingkan dengan garis, jumlah filter pada lapisan kedua biasanya lebih banyak daripada jumlah filter pada lapisan pertama. CNN modern1 biasanya memiliki lebih dari 2 lapisan.
+        CNN telah menunjukkan kinerja mutakhir pada berbagai tantangan klasifikasi gambar. Model CNN berkinerja jauh lebih baik ketika hiperparameter disetel secara optimal. Jumlah lapisan, neuron per lapisan, pembelajaran dan tingkat putus sekolah, fungsi aktivasi, dan ukuran batch adalah contoh-contoh hiperparameter dalam CNN. Untuk semua gambar Untuk semua tugas klasifikasi, tidak ada pengaturan umum terbaik untuk optimasi hyperparameter. Beberapa karakteristik bisa dapat disetel secara manual, tetapi membutuhkan banyak usaha dan membutuhkan pengetahuan khusus. Pencarian kisi-kisi dan pencarian acak  dapat digunakan untuk mengoptimalkan hyperparameter secara otomatis, namun kedua teknik ini mahal secara komputasi serta membutuhkan waktu yang sangat lama untuk menghasilkan hasil yang baik. Banyak teknik yang telah dibuat untuk menangani masalah ini. Untuk beberapa masalah, algoritma secara efektif menyelesaikannya dengan menggunakan metode tertentu yang diterima. 
+        Berikutnya, Advanced CNN juga dapat dikombinasikan dengan BERT. Dua hingga empat kernel yang berbeda akan digunakan untuk menyematkan konten BERT berukuran 𝑛𝑛+2 × 768 dimensi ke dalam lapisan konvolusi lapisan konvolusi. Hasil konvolusi dari setiap kernel akan dihubungkan ke maxpoling sebelum digabungkan dengan concenate function. Matriks output dari concenate function akan digunakan sebagai input untuk output layer ukuran tiga. Setiap node pada output layer merepresentasikan probabilitas sebuah kalimat diklasifikasikan sebagai ujaran kebencian. 
+        </p>
+    </article> 
+    <article>
+      <h2>Penggunaan CNN menggunakan Apache Hadoop dan Apache Hive</h2>
+      <p class="p">Tantangan untuk mendeteksi dan mengelola penyakit tanaman secara efektif di bidang pertanian memainkan peran penting dalam industri makanan, hal ini sangat memakan waktu dan mungkin memiliki banyak kesalahan. Selain itu, jumlah data yang dihasilkan saat ini sangat besar sehingga penanganan data ini membutuhkan platform yang aman dan terukur.
+        Solusi kami melibatkan pengoptimalan proses pelatihan untuk model pendeteksian penyakit tanaman menggunakan Hadoop dan PySpark untuk pemrosesan paralel yang efisien dari kumpulan data gambar tanaman yang sangat besar. Berdasarkan Pembelajaran Mesin dan Jaringan Syaraf Tiruan (CNN) berbasis Python, model ini mengotomatiskan deteksi penyakit tanaman dengan presisi tinggi
+      </p>
+        <p class="p">1.	Kurasi dan Augmentasi Data:</p>
+        <p>Sangat penting untuk memiliki dataset berkualitas baik, yang diberi label dan diproses dengan benar sebelum melatih model Akuisisi Data, Kami memperoleh dataset kami dari Kaggle, yang menyediakan sumber data terverifikasi yang andal. Dataset ini berfungsi sebagai dasar untuk pelatihan model kami, memastikan kualitas dan keaslian informasi yang digunakan dalam proses pembelajaran mesin.
+        </p>
+          <p class="p">a.	Kurasi Dataset:</p>
+        <p>Di dalam dataset, terdapat tiga file yang berisi data uji, data latih, dan data validasi. Untuk dataset Apple, file uji berisi total 263 gambar, dengan 166 gambar daun apel yang sakit dan 97 gambar daun apel yang sehat. File latih terdiri dari 807 gambar, termasuk 371 gambar daun apel yang sakit dan 463 gambar daun yang sehat. Terakhir, file validasi terdiri dari 91 gambar, dengan 41 gambar yang sakit dan 50 gambar yang sehat. Dataset Cotton Dalam dataset tersebut, file uji memiliki total 157 gambar yang dibagi lagi menjadi 77 gambar daun apel yang sakit dan 80 daun apel yang sehat. File latih memiliki total 715 gambar yang dibagi lagi menjadi 288 gambar daun apel yang sakit dan 427 daun yang sehat. File validasi memiliki total 253 gambar yang dibagi lagi menjadi 121 gambar yang sakit dan 132 gambar yang sehat.
+        </p>
+          <p>b.	Penambahan Data:</p>
+        <p>Prapemrosesan data penting untuk menjaga kualitas gambar yang baik dan mempersiapkan model. Dataset kami berisi 2000 gambar, dengan setiap gambar memiliki sudut atau ukuran yang berbeda. Kami memastikan bahwa setiap gambar diatur ke dimensi yang seragam dengan tinggi dan lebar yang sama yaitu 150px. Kami membagi gambar-gambar ini ke dalam beberapa kelompok yang masing-masing terdiri dari 32 gambar. Menyiapkan ukuran batch yang sesuai membantu meningkatkan kecepatan pelatihan dan mengoptimalkan penggunaan memori perangkat keras. Generator data digunakan untuk mengubah ukuran, membalik, mengubah skala, memutar, memperbesar, atau memotong gambar, semua teknik ini digunakan untuk melakukan prapemrosesan data. Kami mengubah skala gambar menjadi 1/255 dengan membagi nilai piksel gambar dengan 255, yang menempatkan nilai piksel dalam kisaran [0, 1]. Hal ini membantu dalam menormalkan nilai piksel setiap gambar dan, pada gilirannya, memfasilitasi pelatihan model yang lebih cepat dan lebih seragam. Mode kelas yang dipilih adalah Biner, karena digunakan untuk membedakan antara dua kelas. 
+        </p>
+          <p>2.	Konfigurasi Infrastruktur:</p>        
+        <p>Hadoop adalah kerangka kerja sumber terbuka yang membantu mengelola data dalam jumlah besar dan membantu dalam penyimpanan dan pra-pemrosesan data untuk aplikasi. Hive berfungsi sebagai alat infrastruktur gudang data yang digunakan bersama Hadoop untuk memproses data terstruktur. PySpark membantu kita dalam preprocessing skala besar secara real-time dalam lingkungan Python yang terdistribusi. Hadoop menyediakan infrastruktur yang diperlukan untuk memproses dan menyimpan gambar tanaman berukuran besar, termasuk daun apel dan anggur. Hadoop Distributed File System (HDFS) memungkinkan akses yang mudah ke file dalam sistem jaringan, sehingga memungkinkan kita untuk mendapatkan lebih banyak data. Hadoop menghilangkan kebutuhan untuk mengkhawatirkan biaya perangkat keras yang sebenarnya terkait dengan penyimpanan data, versi Hadoop yang saat ini digunakan adalah Apache Hadoop 3.3.5, yang dikonfigurasi dengan faktor replikasi 3 dan ukuran blok Hadoop 128 MB. Untuk mengoptimalkan alokasi sumber daya, nilai paralelisme dan konkurensi Hadoop telah disesuaikan. Secara khusus, nilai untuk mapreduce.tasktracker.map.tasks.maximum dan mapreduce.tasktracker.reduce.tasks.maximum diatur ke 2. Hadoop secara efektif menangani kegagalan node karena faktor replikasi diatur ke 3, memastikan tidak ada data yang hilang selama pelatihan dan pengujian model.
+        Hive menyediakan gudang data yang membantu dalam mengelola dan memberi label pada gambar yang disimpan di Hadoop. Hive memiliki struktur seperti SQL yang menyederhanakan pemahaman data untuk selanjutnya digunakan oleh convolutional neural network (CNN) untuk pelatihan model. Versi Hive yang digunakan saat ini adalah 3.1.3. Kami memuat gambar dan label ke dalam Hive dengan bantuan Python. Python juga digunakan untuk mengeksekusi kueri Hive, memfasilitasi ekstraksi dan pemuatan gambar selama proses pembuatan model. PySpark memfasilitasi koneksi API antara Hive, Hadoop, dan Python. Python sangat penting untuk mengembangkan model untuk memprediksi daun yang sakit [28]. PySpark memungkinkan interaksi yang mulus dengan sistem komputasi terdistribusi Hadoop, sehingga memungkinkan integrasi yang mulus antara pemrosesan data Python dan alat pembelajaran mesin di lingkungan berbasis Hadoop. Saat menggunakan PySpark, kami membuat sesi aplikasi menggunakan PySpark API, yang menghubungkan Hive ke Hadoop. Setelah koneksi ini dibuat, API digunakan untuk mengambil gambar yang telah diproses sebelumnya dari Sistem File Hadoop dan menggunakannya dalam lingkungan Python. Versi PySpark yang digunakan saat ini adalah 3.4.0, yang disediakan oleh Apache Spark. Selain itu, kami melakukan tugas-tugas augmentasi data lainnya dengan menggunakan OpenCV dan teknik-teknik lainnya.
+      </p>
+        <p>3.	Pemrosesan Data Paralel dengan Hadoop, Hive, dan Pyspark</p>
+        <p>a.	Konsumsi dan Penyimpanan Data di HDFS:</p>
+        <p>Proses mentransfer data mentah ke dalam sistem file terdistribusi Hadoop (HDFS) adalah proses mendasar dalam pipeline prapemrosesan data. Kita perlu memastikan konsumsi data yang efisien ke dalam HDFS. Tahap awal adalah mengumpulkan gambar mentah tanaman dan melakukan prapemrosesan untuk memastikan konsistensi dan kebersihannya. Hal ini melibatkan teknik Augmentasi data. Selanjutnya, setelah persiapan data, kami menggunakan baris perintah Hadoop untuk mengunggah gambar ke dalam node HDFS menggunakan skrip konsumsi data.HDFS juga memeriksa format file gambar sebelum kami mengunggahnya sehingga tidak ada masalah dengan kompatibilitas gambar sehingga tidak ada masalah saat model dilatih. Ada 2 format file yang diterima oleh node, yaitu JPEG dan PNG.
+        Keandalan Data dan Toleransi kesalahan adalah fitur yang sangat terkenal dari HDFS. Faktor replikasi dari Hadoop adalah 3.
+        Yaitu setiap node direplikasi dan disimpan di 3 tempat yang kemudian dipulihkan jika salah satu node gagal. HDFS menggunakan checksum untuk memverifikasi integritas data selama pembacaan dan pengunggahan gambar. Proses pemasukan dan penyimpanan data kami ke dalam HDFS mencakup pengumpulan data, preprocessing, dan pemilihan format file yang kompatibel dengan Hadoop, serta memanfaatkan mekanisme HDFS yang kuat untuk keandalan data dan toleransi terhadap kesalahan. Langkah-langkah ini sangat penting dalam membangun fondasi yang kokoh untuk tugas-tugas prapemrosesan dan analisis data selanjutnya.
+      </p>
+        <p>b.	Definisi Skema dan Manajemen Data Terstruktur menggunakan Hive:</p>
+        <p>Memiliki desain skema yang efektif penting untuk memastikan bahwa tidak ada kebocoran data, yaitu data yang dilabeli tidaktercampur saat memuat gambar ke dalam Hadoop atau mengunggah gambar ke dalam Python. Kami menggunakan Python untuk menjalankan pernyataan bahasa definisi data Hive. Hive membantu memberikan skema yang tepat pada data kita untuk memahaminya secara visual. Tabel Hive dipetakan dengan cermat ke data, memastikan bahwa setiap bidang dalam skema sesuai dengan atribut data yang relevan. Pemetaan ini sangat penting untuk pengambilan data yang mulus dan analisis selanjutnya. Hal ini juga membantu dalam memberikan akses ke data kepada orang yang tepat untuk memastikan keamanan data. Hive terintegrasi secara mulus dengan komponen lain dari ekosistem Hadoop, memungkinkan kami untuk memanfaatkan HDFS untuk penyimpanan data dan melakukan pemrosesan data terdistribusi dengan alat seperti PySpark.
+        </p>
+          <p>c.	Tugas Pemrosesan Data Spesifik dengan PySpark:</p>
+        <p>PySpark memainkan peran penting dalam proses pemrosesan data, berfungsi sebagai komponen penting dalam pipeline augmentasi dan preprocessing data kami. PySpark melakukan pengubahan ukuran gambar dengan mengubah ukuran semua gambar menjadi 224x224 piksel dan kemudian mengunggahnya kembali ke node Hadoop. PySpark juga menangani rotasi gambar, pengubahan ukuran, pergeseran, dan penskalaan. Kerangka kerja ini memanfaatkan komputasi dalam memori, menyimpan data dalam cache untuk akses cepat, yang mempercepat pengambilan gambar dan menjalankan model pada beberapa node. Teknik pengoptimalan tugas PySpark membantu menghemat penggunaan CPU, mengurangi komputasi yang tidak perlu, dan mengoptimalkan proses prapemrosesan data secara keseluruhan, yang berkontribusi pada efisiensi.
+        </p>
+        
+    </article> 
+    <article>
+      <h2>Konklusi</h2>
+      <p>Bahwa Convolutional Neural Network (CNN) merupakan model pembelajaran mendalam yang dirancang untuk deteksi gambar dan objek dengan meniru cara manusia mengenali gambar. CNN mengandalkan beberapa lapisan filter untuk mengekstraksi fitur dari data gambar, mulai dari garis dan kurva hingga pola yang lebih kompleks, yang sangat bermanfaat untuk klasifikasi, pelacakan, dan pengenalan objek. Pengaturan hiperparameter seperti jumlah lapisan, fungsi aktivasi, dan ukuran batch sangat berpengaruh pada performa CNN, dan untuk meningkatkan akurasi, dilakukan pencarian parameter optimal melalui teknik otomatis seperti pencarian kisi-kisi atau pencarian acak.
+        Selain itu, model CNN dapat diintegrasikan dengan teknologi modern seperti BERT untuk aplikasi lebih lanjut, misalnya deteksi ujaran kebencian. Untuk menangani data yang besar dan mengoptimalkan proses deteksi penyakit tanaman, digunakan ekosistem Hadoop yang terdiri dari HDFS, Hive, dan PySpark. Hadoop menyediakan infrastruktur penyimpanan data, sementara Hive mengelola dan melabeli data dengan struktur terdefinisi, dan PySpark mempercepat pemrosesan data melalui pemrosesan paralel. Integrasi ini memungkinkan efisiensi, keandalan data, dan toleransi kesalahan. Model CNN yang diimplementasikan dalam lingkungan Hadoop dapat mengidentifikasi penyakit tanaman secara akurat, memanfaatkan kekuatan infrastruktur terdistribusi dan proses paralel yang ditawarkan oleh Hadoop, Hive, dan PySpark untuk mendukung sektor pertanian dan memberikan solusi deteksi penyakit tanaman yang efektif.         
+        </p>
+    </article>
+    <>
+      <h2>Daftar Pustaka</h2>
+      <p>
+        1. Bose, A., & Garg, R. (2024). Optimized CNN Using Manta-Ray Foraging Optimization for Brain Tumour Detection. Procedia Computer Science, 235, 2187–2195. https://doi.org/10.1016/j.procs.2024.04.207
+      </p>
+        <p>2. Putra, C. D., & Wang, H. C. (2024). Advanced BERT-CNN for Hate Speech Detection. Procedia Computer Science, 234, 239–246. https://doi.org/10.1016/j.procs.2024.02.170</p>
+        <p>3. Sharma, V., Kannan, S., Tanya, S., & Panda, N. (2024). Detecting Plant Diseases at Scale: A Distributed CNN Approach with PySpark and Hadoop. Procedia Computer Science, 235(2023), 1044–1057. https://doi.org/10.1016/j.procs.2024.04.099</p>
+        <p>4. Verdhan, V. (2021). Introduction to Computer Vision and Deep Learning. In Computer Vision Using Deep Learning. https://doi.org/10.1007/978-1-4842-6616-8_1</p>
+        <p>5. Vygotsky, L. S. (1999). Neural Network. Orthodontic Treatment of Class III Malocclusion, 1990(2), 306. </p>
+    </article>
+  </section>
+  
+  <footer>
+    <p>&copy; 2024 One Page Blog. Dibuat oleh [Nama Anda]</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
